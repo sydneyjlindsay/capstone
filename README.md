@@ -15,57 +15,62 @@ The project leverages Natural Language Processing and machine learning models to
 ### Impact
 In an industry where billions are at stake and sentiment is continuously evolving, this project could be a game-changer. It aims to influence content creation, improve advertising targeting, and offer better recommendations to consumers
 
+## Notebooks
+
+- **1-Cleaning_MovieLens_Dataset**: 
+  - Start here. Cleaning the main MovieLens Dataset of user review text. 
+  
+- **2-Cleaning_Supplemental_Metadata**: 
+  - Cleaning supplemental movie metadata dataset. 
+  
+- **3-EDA**: 
+  - Exploratory Data Analysis and final cleaning of dataset.
+
+- **4-Baseline_Modeling**: 
+  - Final dataframe creation, feature engineering, text pre-processing, and baseline modeling. 
+
 ## Data Dictionary
 
-- **item_id**: 
-  - Unique identifier for each item (movie or show) in the dataset.
-  
 - **imdb_id**: 
   - IMDb's unique identifier for each movie or show.
   
-- **title_x**: 
-  - The title of the movie or show, as sourced from one dataset.
+- **title**: 
+  - The title of the movie.
   
-- **title_y**: 
-  - The title of the movie or show, as sourced from a different dataset.
+- **actors**: 
+  - List of main actors in the movie or show.
+
+- **directors**: 
+  - List of directors who worked on the movie.
+
+- **genres**: 
+  - List of genres associated with the movie.
   
-- **rating**: 
-  - The IMDb star rating of the movie or show out of 10.
+- **language_en**: 
+  - Whether the original language was English (1) or other (0).
   
-- **votes**: 
-  - The number of votes that the movie or show has received on IMDb.
-  
-- **release_date**: 
-  - The date the movie or show was released.
+- **year**: 
+  - The year the movie was released.
   
 - **runtime**: 
-  - The duration of the movie or show in minutes.
+  - The duration of the movie in minutes.
   
 - **budget**: 
-  - The production budget of the movie or show.
+  - The production budget of the movie.
   
-- **revenue**: 
-  - The total box office revenue of the movie or show.
+- **box_office_gross**: 
+  - The total box office gross of the movie.
   
-- **original_language**: 
-  - The original language in which the movie or show was produced.
+- **production_companies**: 
+  - List of production companies involved in the movie.
   
-- **genre_names**: 
-  - List of genres associated with the movie or show.
+- **votes**: 
+  - The number of votes that the movie has received on IMDb.
   
-- **director_names**: 
-  - List of directors who worked on the movie or show.
-  
-- **directedBy**: 
-  - List of directors (sourced from a different dataset).
-  
-- **actor_names**: 
-  - List of main actors in the movie or show.
-  
-- **starring**: 
-  - List of main actors (sourced from a different dataset).
-  
-- **company_names**: 
-  - List of production companies involved in the movie or show.
+- **rating**: 
+  - The IMDb star rating of the movie out of 10.
 
-*Note: Duplicate columns like title_x and title_y, director_names and directedBy, actor_names and starring, will be reconciled later.*
+*Note: directors, actors, production_comapnies are listed in order of "credit" (importance) as per the official movie credits. Genres are listed alphabetically.*
+
+
+    
