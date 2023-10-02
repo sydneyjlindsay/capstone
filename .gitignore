@@ -9,3 +9,6 @@
 
 # Ignore R history files
 .Rhistory
+
+# Ignore Data folder
+data/
