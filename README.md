@@ -28,6 +28,9 @@ In an industry where billions are at stake and sentiment is continuously evolvin
 
 - **4-Baseline_Modeling**: 
   - Final dataframe creation, feature engineering, text pre-processing, and baseline modeling. 
+  
+- **5-Further_Baseline_Modeling**: 
+  - Re-approaching feature engineering with different methods, re-doing text vectorization, and running further baseline models. 
 
 ## Data Dictionary
 
