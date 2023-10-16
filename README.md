@@ -1,19 +1,24 @@
-# Capstone Project 
+## Predictive Cinematics: An Ensemble Learning Approach
 
-### Project Overview
-This project aims to predict IMDb star ratings for movies and shows based on features like review text, genre, duration, and more. The focus is on the film and television sectors, especially in the context of the ongoing "streaming wars."
+#### Overview
+This project aims to predict the success of movies based on a range of features, including both metadata and text-based variables such as reviews. The ultimate goal was to create a model that could take into consideration various movie attributes like actors, directors, genres, and budgets, as well as sentiment from text reviews, to predict a movie's success.
 
-### Problem Statement
-As traditional studios and streaming services vie for audience attention, understanding consumer sentiment quickly is critical. This project aims to model star ratings and analyze trends, offering a competitive edge to various stakeholders.
+#### Methodology
+The dataset comprises several features, including but not limited to:
+- Metadata: Actors, Directors, Genres, Budgets
+- Text Data: Reviews (processed into unigrams and bigrams)
 
-### Target Audience
-This analysis benefits movie producers, streaming platforms, advertisers, and viewers by providing actionable insights for decision-making and personalization.
+The project employs various machine learning algorithms, including:
+- Logistic Regression
+- Random Forest
+- XGBoost
+- Ensemble Methods (Voting and Stacking Classifiers)
 
-### Key Features
-The project leverages Natural Language Processing and machine learning models to predict star ratings based on a myriad of features, providing a more nuanced understanding of audience sentiment.
+#### Future Directions
+1. Feature Engineering: Experiment with different encoding techniques for high-cardinality features like actors and directors.
+2. Neural Networks: Investigate the use of neural networks and embedding layers to capture more complex relationships among the features.
 
-### Impact
-In an industry where billions are at stake and sentiment is continuously evolving, this project could be a game-changer. It aims to influence content creation, improve advertising targeting, and offer better recommendations to consumers
+---
 
 ## Notebooks
 
@@ -31,7 +36,15 @@ In an industry where billions are at stake and sentiment is continuously evolvin
   
 - **5-Further_Baseline_Modeling**: 
   - Re-approaching feature engineering with different methods, re-doing text vectorization, and running further baseline models. 
+  
+- **6-Final_Modeling**: 
+  - Final modeling and hyperparameter tuning, along with model evaluation and interpretation.   
 
+- **final_modeling_separate**: 
+  - Original individual notebooks for final models, originally run in colab. 
+  
+---
+  
 ## Data Dictionary
 
 - **imdb_id**: 
@@ -74,6 +87,3 @@ In an industry where billions are at stake and sentiment is continuously evolvin
   - The IMDb star rating of the movie out of 10.
 
 *Note: directors, actors, production_comapnies are listed in order of "credit" (importance) as per the official movie credits. Genres are listed alphabetically.*
-
-
-    
